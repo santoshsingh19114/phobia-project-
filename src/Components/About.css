@@ -1,0 +1,95 @@
+.About-main h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #38a1d2;
+  text-align: center;
+}
+
+
+.About-main h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.About-main h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #265267;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+/* *, ::after, ::before {
+  box-sizing: border-box;
+} */
+
+.About-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .About-heading {
+    text-align: center;
+  }
+  
+  .About-main-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .About-box {
+    width: 45%; 
+    padding: 20px;
+   
+    
+    height:420px;
+    font-size: 30px;
+  }
+  @media screen and (max-width:1075px) {
+    .About-box{
+        font-size: 15px;;
+    }
+     /* .About-main-box{
+        flex-direction: column;
+     } */
+
+  }
+  @media screen and (max-width:354px) {
+    .About-box{
+        font-size:10px;
+        flex-direction: column;
+    }
+
+  }
+  /* @media screen and (max-width: 825px) {
+    .About-main-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .About-box {
+      width: 100%;
+      margin-top: 20px;
+    }
+  } */
+  @media screen and (max-width:408px) {
+    .About-main-box{
+        flex-direction: column;
+    }
+
+  }
+  

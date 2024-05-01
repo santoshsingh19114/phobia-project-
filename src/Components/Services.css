@@ -1,0 +1,82 @@
+.service-main h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #38a1d2;
+    text-align: center;
+}
+
+
+.service-main h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+ 
+.service-main h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #265267;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+/* *, ::after, ::before {
+    box-sizing: border-box;
+} */
+
+
+.service-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:400px;
+    width:100%;
+    flex-direction: column;
+   background-color:  #f3f5fa;
+}
+.service-main-box{
+    height:300px;
+    width:100%;
+   
+    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.service-box{
+    height:200px;
+    width:20%;
+    margin:13px;
+   
+    background-color:#fff;
+    transition: transform 0.3s ease-in-out;
+    padding: 3px 0px 0px 10px;
+box-shadow: 3px 3px 3px 3px #bfd1f7f8;
+
+}
+.service-box:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:750px) {
+    .service-main-box{
+        flex-direction: column;
+        
+    }
+    .service-box{
+        width:80%;
+        height:460px;
+    }
+}
+

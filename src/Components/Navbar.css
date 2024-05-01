@@ -1,0 +1,132 @@
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color:#074173;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  height:70px;
+  opacity: 0.6;
+ 
+}
+  
+  .navbar-logo {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    float: left;
+  }
+  
+  .navbar-links {
+   
+    display:flex;
+    cursor: pointer;
+    color:white;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .navbar-links li{
+    margin: 8px ;
+    list-style: none;
+    padding: 0 20px 0 20px ;
+  }
+
+  
+  .navbar-links a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #ddd;
+    color: black;}
+    
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 6px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .bot-button{
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    border:none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .bot-button:hover{
+    transform: scale(1.1);
+  }
+  
+  .open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .signup{
+    width:150px;
+  height: 50px;
+/* padding: 20px; */
+border-radius: 20px; 
+margin-left: 0; 
+color: black;
+font-weight: 800;
+cursor: pointer;
+
+}
+  
+
+.signup:hover{
+  background-color: #7fb7f3;
+}
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-links.active {
+      display: block;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      float: right;
+      margin-right: 15px;
+      margin-top: 15px;
+    }
+  }
+  

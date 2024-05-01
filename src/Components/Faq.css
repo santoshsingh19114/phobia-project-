@@ -1,0 +1,68 @@
+/* FAQ.css */
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #38a1d2;
+    text-align: center;
+}
+
+/* Style for FAQ container */
+/* FAQ.css */
+
+/* Style for FAQ container */
+.faq-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* Add border bottom */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Style for individual FAQ items */
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for question text */
+  .question {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style for answer text */
+  .answer {
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  /* Style for active question */
+  .active-question {
+    color: #007bff; /* Blue color */
+  }
+  
+
+  .faq-question-set{
+    /* text-align: left; */
+    width: 80%;
+    /* padding: 0 100px 0 100px; */
+    background-color: #f5f5f5;
+    border-bottom: 1px  solid #cdcecf;
+
+  }
+
+  .faq-question{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    height: 40px;
+  }

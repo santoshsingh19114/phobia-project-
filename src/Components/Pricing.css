@@ -1,0 +1,86 @@
+.pricing h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #38a1d2;
+    text-align: center;
+}
+
+
+.pricing h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+ 
+ .pricing h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #265267;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+/* *, ::after, ::before {
+    box-sizing: border-box;
+} */
+
+
+.pricing p{
+    padding: 20px;
+    text-align: center;
+
+}
+
+.threapy-plan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e8f1fc;
+}
+.threapy-plan plan{
+    width: 380px;
+    padding: 20px;
+    height: 40vh;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color:#000000;
+    transition: all .3s ease-in-out;
+    background-color: #dbe2fd;    
+    border-radius: 20px;
+    border-right: 2px solid rgba(191, 160, 250, 0.559);
+    border-bottom: 2px solid rgba(191, 160, 250, 0.559);
+}
+
+.threapy-plan plan header{
+    font-size: xx-large;
+    font-weight: bold;
+    color: #286886;
+    
+}
+
+.threapy-plan plan price{
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid rgb(31, 31, 44);
+   margin: 0 0 0 20px;
+}
+
+
+button{
+    margin-left:70px ;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+}
